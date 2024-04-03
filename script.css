@@ -1,0 +1,44 @@
+calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+}
+
+.display {
+    grid-column: span 4;
+    background-color: wheat;
+    color: black;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+#clear {
+    grid-column: span 2;
+}
+
+#equals {
+    grid-column: span 4;
+}
+
+#zero {
+    grid-column: span 2;
+}
+
+#decimal {
+    grid-column: span 1;
+}
